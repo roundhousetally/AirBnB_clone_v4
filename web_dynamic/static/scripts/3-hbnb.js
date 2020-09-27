@@ -28,4 +28,12 @@ $(document).ready(function () {
       $('div#api_status').removeClass('available');
     }
   });
+  $.ajax({
+    url: "http://localhost:5001/api/v1/places_search/", 
+    type: "post",
+    Content-Type: "application/json",
+    data: {},
+    success: function (data){
+      for (let i in data){
+	$('.places').append(/* unsure of the best way to do this */);
 });
