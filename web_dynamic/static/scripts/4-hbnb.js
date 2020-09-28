@@ -11,7 +11,7 @@ $(document).ready(function () {
       for (let i = 0; i < ch.length; i++) {
         if (ch[i] === $(this).attr('data-name')) {
           ch.splice(i, 1);
-	  idlist.splice(i, 1);
+          idlist.splice(i, 1);
         }
       }
       if (ch !== undefined && ch.length > 0) {
@@ -29,9 +29,10 @@ $(document).ready(function () {
     }
   });
   getData();
-  $('button').click(function (){
-    getData({amenities:idlist});
-});});
+  $('button').click(function () {
+    getData({ amenities: idlist });
+  });
+});
 function getData (data = {}) {
   $.ajax({
     url: 'http://localhost:5001/api/v1/places_search/',
