@@ -32,7 +32,7 @@ $(document).ready(function () {
     data: '{}',
     success: function (result) {
       for (const i in result) {
-        const first = '<article>\n<h2>' + result[i].name + '</h2>   <div class="price_by_night"><h3>' + result[i].price_by_night + '</h2></div>\n   <div class="information" role="list">\n      <div class="max_guest" title="Number of Guests"><h3>' + result[i].max_guest + 'Guest';
+        const first = '<article>\n<h2><div class="title_box">' + result[i].name + '</h2>   <div class="price_by_night">' + result[i].price_by_night + '</div></div>\n   <div class="information" role="list">\n      <div class="max_guest" title="Number of Guests"><h3>' + result[i].max_guest + 'Guest';
         let second = '';
         if (result[i].max_guest !== 1) {
           second = second + 's';
