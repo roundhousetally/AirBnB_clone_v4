@@ -28,14 +28,11 @@ $(document).ready(function () {
   });
   $.ajax({
     url: 'http://localhost:5001/api/v1/places_search/',
-    type: 'post',
-    Content_Type: 'application/json',
-    data: {},
+    type: 'POST',
+    contentType: 'application/json',
+    data: "{}",
     success: function (result) {
-      $('.places').append('<article>');
-      for (const i in result) {
-        $('.places').append('\n<h2>${i.name}</h2>\n   <div class="price_by_night"><h3>${i.price_by_night}</h2></div>\n   <div class="information" role="list">\n      <div class="max_guest" title="Number of Guests"><h3>${i.max_guest} Guest{% if i.max_guest != 1 %}s{% endif %}</h3></div>\n      <div class="number_rooms">${i.number_rooms} Bedroom{% if i.number_rooms != 1 %}s{% endif %}</div>\n<div class="number_bathrooms">${i.number_bathrooms} Bathroom{% if place.number_bathrooms != 1 %}s{% endif %}</div>\n   </div>\n   <div class="user"><b>Owner:</b> ${i.user.first_name} ${i.user.last_name}</div>\n   <div class="description">${place.description}</div>\n');
-      }
-    }
-  });
+      for (let i in result) {
+        $('.places').append('<article>\n<h2>' + result[i].name + '</h2>   <div class="price_by_night"><h3>${i.price_by_night}</h2></div>\n   <div class="information" role="list">\n      <div class="max_guest" title="Number of Guests"><h3>${i.max_guest} Guest{% if i.max_guest != 1 %}s{% endif %}</h3></div>\n      <div class="number_rooms">${i.number_rooms} Bedroom{% if i.number_rooms != 1 %}s{% endif %}</div>\n<div class="number_bathrooms">${i.number_bathrooms} Bathroom{% if place.number_bathrooms != 1 %}s{% endif %}</div>\n   </div>\n   <div class="user"><b>Owner:</b> ${i.user.first_name} ${i.user.last_name}</div>\n   <div class="description">${i.description}</div>\n</article>\n');
+   }}});
 });
