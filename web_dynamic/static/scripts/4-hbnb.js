@@ -1,14 +1,17 @@
 const ch = [];
+const idlist = [];
 
 $(document).ready(function () {
   $('li input').click(function () {
     if ($(this).is(':checked')) {
       ch.push($(this).attr('data-name'));
+      idlist.push($(this).attr('data-id'));
       $('.amenities h4').text(ch.join(', '));
     } else {
       for (let i = 0; i < ch.length; i++) {
         if (ch[i] === $(this).attr('data-name')) {
           ch.splice(i, 1);
+	  idlist.splice(i, 1);
         }
       }
       if (ch !== undefined && ch.length > 0) {
@@ -26,14 +29,15 @@ $(document).ready(function () {
     }
   });
   getData();
-  $('button').click(getData({amenities:ch}));
-});
+  $('button').click(function (){
+    getData({amenities:idlist});
+});});
 function getData (data = {}) {
   $.ajax({
     url: 'http://localhost:5001/api/v1/places_search/',
     type: 'POST',
     contentType: 'application/json',
-    data: '{}',
+    data: JSON.stringify(data),
     success: function (result) {
       $('.places').empty();
       for (const i in result) {
