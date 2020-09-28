@@ -47,7 +47,7 @@ $(document).ready(function () {
         if (result[i].number_bathrooms !== 1) {
           fourth = fourth + 's';
         }
-        fourth = fourth + '</div>\n   </div>\n   <div class="user"><b>Owner:</b> ' + result[i].user.first_name + ' ' + result[i].user.last_name + '</div>\n   <div class="description">' + result[i].description + '</div>\n</article>\n';
+        fourth = fourth + '</div>\n   </div>\n   <div class="description">' + result[i].description + '</div>\n</article>\n';
         $('.places').append(first + second + third + fourth);
       }
     }
