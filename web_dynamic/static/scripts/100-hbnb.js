@@ -1,23 +1,59 @@
 const ch = [];
-const idlist = [];
+const aIdlist = [];
+const stCi = [];
+const sIdlist = [];
+const cIdlist = [];
 
 $(document).ready(function () {
-  $('li input').click(function () {
+  $('#amenity_inp').click(function () {
     if ($(this).is(':checked')) {
       ch.push($(this).attr('data-name'));
-      idlist.push($(this).attr('data-id'));
+      aIdlist.push($(this).attr('data-id'));
       $('.amenities h4').text(ch.join(', '));
     } else {
       for (let i = 0; i < ch.length; i++) {
         if (ch[i] === $(this).attr('data-name')) {
           ch.splice(i, 1);
-          idlist.splice(i, 1);
+          aIdlist.splice(i, 1);
         }
       }
       if (ch !== undefined && ch.length > 0) {
         $('.amenities h4').text(ch.join(', '));
       } else {
         $('.amenities h4').text('\xa0');
+      }
+    }
+  });
+  $('.st_ci').click(function () {
+    if ($(this).is(':checked')) {
+      stCi.push($(this).attr('data-name'));
+      if ($(this).attr('id') === 'state_inp') {
+        sIdlist.push($(this).attr('data-id'));
+      } else {
+        cIdlist.push($(this).attr('data-id'));
+      }
+      $('.locations h4').text(stCi.join(', '));
+    } else {
+      for (let i = 0; i < stCi.length; i++) {
+        if (ch[i] === $(this).attr('data-name')) {
+          stCi.splice(i, 1);
+        }
+      }
+      let l;
+      if ($(this).attr('id') === 'state_inp') {
+        l = sIdlist;
+      } else {
+        l = cIdlist;
+      }
+      for (let i = 0; i < l.length; i++) {
+        if (l[i] === $(this).attr('data-id')) {
+          l.splice(i, 1);
+        }
+      }
+      if (stCi !== undefined && stCi.length > 0) {
+        $('.locations h4').text(stCi.join(', '));
+      } else {
+        $('.locations h4').text('\xa0');
       }
     }
   });
@@ -30,7 +66,11 @@ $(document).ready(function () {
   });
   getData();
   $('button').click(function () {
-    getData({ amenities: idlist });
+    getData({
+      amenities: aIdlist,
+      cities: cIdlist,
+      states: sIdlist
+    });
   });
 });
 function getData (data = {}) {
