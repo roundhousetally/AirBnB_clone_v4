@@ -5,7 +5,7 @@ const sIdlist = [];
 const cIdlist = [];
 
 $(document).ready(function () {
-  $('#amenity_inp').click(function () {
+  $('.amenity_inp').click(function () {
     if ($(this).is(':checked')) {
       ch.push($(this).attr('data-name'));
       aIdlist.push($(this).attr('data-id'));
@@ -35,7 +35,7 @@ $(document).ready(function () {
       $('.locations h4').text(stCi.join(', '));
     } else {
       for (let i = 0; i < stCi.length; i++) {
-        if (ch[i] === $(this).attr('data-name')) {
+        if (stCi[i] === $(this).attr('data-name')) {
           stCi.splice(i, 1);
         }
       }
