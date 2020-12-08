@@ -163,10 +163,10 @@ Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twit
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
 Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
 David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
-
 Brett Davis - [Github](https://github.com/MenacingManatee) / [Twitter](https://twitter.com/bre_p_d)
-Tahlia Roper - [Github](https://github.com/roundhousetally) / [Twitter](https://twitter.com/tahliaroper)
 
+
+Tahlia Roper - [Github](https://github.com/roundhousetally) / [Twitter](https://twitter.com/tahliaroper)
 ## About the Developer Tahlia Roper:
  I am an artist from Tulsa, Ok. I completed the foundations curriculum at Holberton Tulsa in November 2020.  
 I love to make things by hand and by computer. If you would like to follow my journey, please add me on [LinkedIn](https://www.linkedin.com/in/tahliaroper/) or [Twitter](https://twitter.com/TahliaRoper).
