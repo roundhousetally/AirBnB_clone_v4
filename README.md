@@ -2,7 +2,7 @@
 
 # AirBnB Clone - The Console
 The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
-<img src="https://github.com/roundhousetally/AirBnB_clone_v4/blob/master/airbnbss.jpg" align="center"
+<img src="https://github.com/roundhousetally/AirBnB_clone_v4/blob/master/airbnbss.jpg" align="center">
 
 ### AirBnB_v4
 This portion of the project was contributed by Tahlia Roper an Brett Davis as a partner project for the foundations curriculum. This was a fun project that focused on the dynamic aspects of the AirBnB website. We pair programmed for the majority of the project furthering both of our understanding of dynamically loaded content through javascript.
