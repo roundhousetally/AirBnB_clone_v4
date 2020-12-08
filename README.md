@@ -1,5 +1,10 @@
+<img src="https://github.com/roundhousetally/AirBnB_clone_v4/blob/master/65f4a1dd9c51265f49d0.png" align="center">
+
 # AirBnB Clone - The Console
 The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
+
+### AirBnB_v4
+This portion of the project was contributed by Tahlia Roper an Brett Davis as a partner project for the foundations curriculum. This was a fun project that focused on the dynamic aspects of the AirBnB website. We pair programmed for the majority of the project furthering both of our understanding of dynamically loaded content through javascript.
 
 #### Functionalities of this command interpreter:
 * Create a new object (ex: a new User or a new Place)
@@ -158,8 +163,14 @@ Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twit
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
 Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
 David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
+
 Brett Davis - [Github](https://github.com/MenacingManatee) / [Twitter](https://twitter.com/bre_p_d)
 Tahlia Roper - [Github](https://github.com/roundhousetally) / [Twitter](https://twitter.com/tahliaroper)
+
+## About the Developer Tahlia Roper:
+ I am an artist from Tulsa, Ok. I completed the foundations curriculum at Holberton Tulsa in November 2020.  
+I love to make things by hand and by computer. If you would like to follow my journey, please add me on [LinkedIn](https://www.linkedin.com/in/tahliaroper/) or [Twitter](https://twitter.com/TahliaRoper).
+### For a good laugh please check out my portfolio project [OnlyMemes](https://github.com/roundhousetally/OnlyMemes). 
 
 Second part of Airbnb: Joann Vuong
 ## License
